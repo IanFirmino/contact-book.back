@@ -1,7 +1,11 @@
 import uvicorn
 from fastapi import FastAPI
+from contas_pagar_receber.shared.database import engine, Base
+from contas_pagar_receber.controllers import contas_pagar_rebecer_controller
+from contas_pagar_receber.models import contas_pagar_receber_model
 
-from contas_pagar_receber import contas_pagar_rebecer_controller
+Base.metadata.drop_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
