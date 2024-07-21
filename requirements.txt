@@ -5,3 +5,6 @@ pyodbc==
 
 # TESTS
 pytest==8.2.2
+
+#TOOLS
+alembic==

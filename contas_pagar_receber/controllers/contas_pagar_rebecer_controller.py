@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from decimal import Decimal
 from typing import List
 from sqlalchemy.orm import Session
-from ..shared.dependencies import get_db
+from ...shared.database import get_db
 from ..models.contas_pagar_receber_model import ContaPagarReceber
 
 router = APIRouter(prefix="/contas-pagar-receber")
