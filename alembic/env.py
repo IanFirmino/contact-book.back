@@ -5,6 +5,7 @@ from sqlalchemy import pool
 from shared.database import Base
 from alembic import context
 from contas_pagar_receber.models.contas_pagar_receber_model import ContaPagarReceber
+from contas_pagar_receber.models.fornecedor_cliente_model import FornecedorCliente
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
